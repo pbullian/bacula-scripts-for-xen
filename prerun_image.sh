@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#VER 1.0 PABLO B. pbullian@unsam.edu.ar
+#PABLO B. pbullian@unsam.edu.ar
 #
 
 APAGO="false";
@@ -20,7 +20,7 @@ count=0
 #apago la machine
 ssh $USER@$IP 'halt'
 
-#espero hasta que desaparesca o 3 min
+#espero hasta que desaparezca o 3 min
 while [ "$APAGO" != "false" -o $count = 90 ] 
 do
   if [[ -n $(xm list|grep $NOMBRE) ]]; then
