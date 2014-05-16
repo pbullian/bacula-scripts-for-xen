@@ -3,7 +3,7 @@ exec > /dev/null
 DUMPDIR=/root
 FIFODIR=$DUMPDIR/fifo
 export PGUSER=postgres
-export PGPASSWORD=M00dl34c4d
+export PGPASSWORD=XXXXXXXXXX
 # only when pg_hba.conf requires it
 /usr/bin/pg_dumpall -g -h 127.0.0.1>$DUMPDIR/globalobjects.dump
 # hopefully never a big file, so no need for a fifo
